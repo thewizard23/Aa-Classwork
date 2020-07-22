@@ -1,0 +1,38 @@
+<h1>User Subs Page</h1>
+
+<section>
+  <h2>Subs List</h2>
+  <% @user.subs.each do |sub| %>
+    <ul>
+      <li> <a href="<%= sub_url(sub) %>"><%= sub.title %></a> </li>
+      <li> <%= sub.description %> </li>
+      <form action="<%= sub_url(sub) %>" method="POST">
+          <input type="hidden" 
+          name="authenticity_token" 
+            value="<%= form_authenticity_token %>">
+      
+          <input type="hidden" name="_method" value="DELETE">
+
+          <button>Delete Sub</button>
+      </form>
+    </ul>
+  <% end %>
+</section>
+
+<section>
+  <h2>Create Sub</h2>
+  <form action="<%= subs_url %>" method="POST">
+    <input type="hidden" 
+      name="authenticity_token" 
+      value="<%= form_authenticity_token %>">
+    
+    <label>Title
+      <input type="text" name="sub[title]">
+    </label>
+    <label>Description
+      <input type="text" name="sub[description]">
+    </label>
+    <button>Create New Sub</button>
+  </form>
+</section>
+
