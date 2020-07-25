@@ -1,0 +1,15 @@
+/* PHASE 5: Cats */
+.content-header{
+  min-height: 200px;
+  background-image: url("/images/cats.jpg") ;
+  position: relative;
+}
+
+.content-header h1 {
+    position: absolute;
+    line-height: 1;
+}
+.view-cat{
+    text-shadow: aqua;
+    position: absolute;
+}
