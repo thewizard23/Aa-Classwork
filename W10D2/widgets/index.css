@@ -1,0 +1,33 @@
+body{
+    font-family: Open Sans;
+    line-height: 1.2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.clock-widget > h1{
+font-size: 28px;
+font-weight: 900 ;
+margin: 20px 10px 10px 20px;
+text-align: inherit;
+}
+
+
+
+.clock-body{
+    display: block; 
+    justify-content: space-between; 
+    color: white;
+    font-family: Orbitron;
+    width: 500px;
+    height: 94px;
+    border: 2px solid black;
+    margin: 0 20px 20px 20px;
+    padding: 10px;
+    background-size: cover;
+    background-color: orange;
+    background-position-y: 20%;
+    display:flex;
+    font-size: 28px;
+    font-weight: 800
+}
