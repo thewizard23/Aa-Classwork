@@ -1,6 +1,7 @@
 import React from 'react'; 
 import Clock from './clock';
 import Tabs from './tabs';  
+import Weather from './weather';
 
 const tabs = [
     {title: "cats1", content:"whatever to show"}, 
